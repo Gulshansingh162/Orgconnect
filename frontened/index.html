@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OrgConnect | Create Your Account</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="/">Org<span>Connect</span></a>
+    <span class="nav-tag">Your future starts here</span>
+  </header>
+
+  <main class="layout">
+    <section class="intro">
+      <div class="eyebrow">CONNECT · LEARN · GROW</div>
+      <h1>Build connections.<br><span>Unlock opportunities.</span></h1>
+      <p>One platform to connect students with professionals, discover opportunities, and take the next step in your career.</p>
+
+      <div class="benefit">
+        <span class="benefit-icon">01</span>
+        <div><strong>For students</strong><p>Build your profile and explore your future.</p></div>
+      </div>
+      <div class="benefit">
+        <span class="benefit-icon">02</span>
+        <div><strong>For employees</strong><p>Connect with the next generation of talent.</p></div>
+      </div>
+      <div class="intro-footer">A better way to connect.</div>
+    </section>
+
+    <section class="form-panel">
+      <div class="form-heading">
+        <div class="eyebrow">WELCOME TO ORGCONNECT</div>
+        <h2 id="formTitle">Create your account</h2>
+        <p id="formSubtitle">Choose your account type to get started.</p>
+      </div>
+
+      <div class="mode-switch">
+        <button type="button" class="mode active" data-role="student">Student</button>
+        <button type="button" class="mode" data-role="employee">Employee</button>
+      </div>
+
+      <div class="auth-switch">
+        <button type="button" id="signupTab" class="tab active">Sign up</button>
+        <button type="button" id="loginTab" class="tab">Log in</button>
+      </div>
+
+      <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+
+      <form id="authForm">
+        <div id="signupFields">
+          <label for="fullName">Full name</label>
+          <input id="fullName" name="fullName" type="text"
+            placeholder="Enter your full name" minlength="2" autocomplete="name" required>
+
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email"
+            placeholder="you@example.com" autocomplete="email" required>
+
+          <div id="studentFields">
+            <label for="college">College / University</label>
+            <input id="college" name="college" type="text"
+              placeholder="Enter your college">
+
+            <label for="course">Course / Degree</label>
+            <input id="course" name="course" type="text"
+              placeholder="e.g. B.Tech Computer Science">
+
+            <label for="graduationYear">Graduation year</label>
+            <input id="graduationYear" name="graduationYear"
+              type="number" min="2000" max="2100" placeholder="2028">
+          </div>
+
+          <div id="employeeFields" hidden>
+            <label for="company">Company/College/University</label>
+            <input id="company" name="company" type="text"
+              placeholder="Company name">
+
+            <label for="designation">Job title / Designation</label>
+            <input id="designation" name="designation" type="text"
+              placeholder="e.g. Software Developer">
+
+            <label for="experience">Experience (years)</label>
+            <input id="experience" name="experience" type="number"
+              min="0" step="0.5" placeholder="0">
+          </div>
+        </div>
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password"
+          minlength="8" autocomplete="new-password"
+          placeholder="At least 8 characters" required>
+
+        <button class="submit-button" id="submitButton" type="submit">
+          Create account <span>→</span>
+        </button>
+      </form>
+
+      <p class="form-note" id="formNote">
+        By continuing, you agree to use OrgConnect responsibly.
+      </p>
+    </section>
+  </main>
+
+  <footer>© 2026 OrgConnect · Connecting people with possibilities</footer>
+  <script src="script.js"></script>
+</body>
+</html>
